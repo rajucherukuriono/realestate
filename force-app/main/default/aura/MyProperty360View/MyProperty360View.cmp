@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable" access="global">
+	<aura:attribute name="PropertyId" type="String"></aura:attribute>
+	<c:myMasterPropertyTab propertyId="{!v.pageReference.state.c__propertyId}"></c:myMasterPropertyTab>
+</aura:component>

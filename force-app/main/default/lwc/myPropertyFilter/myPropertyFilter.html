@@ -1,0 +1,35 @@
+<template>
+    <lightning-layout multiple-rows style="background-color: darkturquoise;">
+        <lightning-layout-item padding="around-small">
+            <div class="header-column">
+                <lightning-combobox label="Locality" variant="label-stacked" placeholder="Select Locality"
+                 field-level-help="Search Property based on Locality" value={location} options={locationOptions} onchange={handleLocationChange}>
+ 
+                </lightning-combobox>
+            </div>
+        </lightning-layout-item> 
+        <lightning-layout-item padding="around-small">
+            <div class="header-column">
+                <lightning-combobox label="No of BedRoom" variant="label-stacked" placeholder="Select"
+                 field-level-help="Search Property based on BedRoom" value={noOfBedRoom} options={noOfBedRoomOptions} onchange={handleBedRoomChange}>
+ 
+                </lightning-combobox>
+            </div>
+        </lightning-layout-item> 
+        <lightning-layout-item padding="around-small">
+            <div class="header-column">
+                <lightning-combobox label="No of BathRoom" variant="label-stacked" placeholder="Select"
+                 field-level-help="Search Property based on BathRoom" value={noOfBathRoom} options={noOfBathRoomOptions} onchange={handleBathRoomChange}>
+ 
+                </lightning-combobox>
+            </div>
+        </lightning-layout-item> 
+        <lightning-layout-item padding="around-small">
+            <div class="header-column">
+                <lightning-input type="number" value={maxBudget} label="Maximum Budget"
+                 field-level-help="Search Property based on Budget" name="maxBudget" placeholder="Enter maximum budget" onchange={handleBudgetChange}>
+                </lightning-input>
+            </div>
+        </lightning-layout-item> 
+    </lightning-layout>
+</template>
